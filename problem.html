@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <title>기탄 수학</title>
+</head>
+
+<body>
+    <script src="/main.js"></script>
+    <div style="text-align: center; padding: 20px 0 10px 0;">
+        <input type="checkbox" id="one">
+        <label for="one">한 자리</label>
+        <input type="checkbox" id="two">
+        <label for="two">두 자리</label>
+        <input type="checkbox" id="three">
+        <label for="three">세 자리</label>
+        <input type="checkbox" id="four">
+        <label for="four">네 자리</label>
+    </div>
+    <div style="text-align: center; padding: 10px 0 30px 0;">
+        <input type="checkbox" id="add">
+        <label for="add">더하기</label>
+        <input type="checkbox" id="sub">
+        <label for="sub">빼기</label>
+        <input type="checkbox" id="mul">
+        <label for="mul">곱하기</label>
+        <input type="checkbox" id="div">
+        <label for="div">나누기</label>
+    </div>
+    
+    <div style="text-align: center;">
+        <input type="button" value="시작" style="width: fit-content;" onclick="start()">
+    </div>
+</body>
+
+</html>
