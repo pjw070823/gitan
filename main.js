@@ -52,7 +52,7 @@ window.addEventListener("keydown", (e) => {
     console.log(e.key)
     sum = 0
     if (!isNaN(Number(e.key))) buffer.push(Number(e.key));
-    if (e.key == '-' || e.key == ',' || e.key == '.') buffer.push('-');
+    if (e.key == '-' || e.keyCode == 229) buffer.push('-');
     for (var i=0; i<buffer.length; i++) {
         if (buffer[buffer.length - i - 1] == '-') {
             if (-sum == answer) {
@@ -68,7 +68,3 @@ window.addEventListener("keydown", (e) => {
         }
     }
 })
-
-function hideInput() {
-    document.getElementById('dummy').style = 'background-color: rgba(0,0,0,0); border-color: rgba(0,0,0,0);'
-}
