@@ -2,7 +2,6 @@ var answer;
 var buffer = []
 
 function start() {
-    document.getElementById('dummy').focus()
     buffer = []
     var maxDigits = document.getElementById('maxDigits').value
     var add = document.getElementById('add').checked
@@ -14,12 +13,13 @@ function start() {
     var frac = document.getElementById('frac').checked
     var decimal = document.getElementById('decimal').checked
     var negative = document.getElementById('negative').checked
-
+    
     var num1 = document.getElementById('num1')
     var op1 = document.getElementById('op1')
     var num2 = document.getElementById('num2')
-
+    
     document.getElementById('problem').hidden = false
+    document.getElementById('dummy').focus()
 
     do {
         var operatorList = []
