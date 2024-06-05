@@ -8,15 +8,9 @@
 </head>
 <body>
     <script src="/main.js"></script>
-    <div style="text-align: center; padding: 20px 0 10px 0;">
-        <input type="checkbox" id="one">
-        <label for="one">한 자리</label>
-        <input type="checkbox" id="two">
-        <label for="two">두 자리</label>
-        <input type="checkbox" id="three">
-        <label for="three">세 자리</label>
-        <input type="checkbox" id="four">
-        <label for="four">네 자리</label>
+    <div style="text-align: center; padding: 20px 0 20px 0;">
+        <span style="margin-right: 10px;">최대 자리수</span>
+        <input type="number" id="maxDigits" style="width: min-content; height: min-content;">
     </div>
     <div style="text-align: center; padding: 10px 0 10px 0;">
         <input type="checkbox" id="add">
@@ -28,7 +22,7 @@
         <input type="checkbox" id="div">
         <label for="div">나누기</label>
     </div>
-    <div style="text-align: center; padding: 10px 0 30px 0;">
+    <div hidden style="text-align: center; padding: 10px 0 30px 0;">
         <input type="checkbox" id="natural">
         <label for="add">자연수</label>
         <input type="checkbox" id="frac">
@@ -40,6 +34,12 @@
     </div>
     <div style="text-align: center;">
         <input type="button" value="시작" style="width: fit-content;" onclick="start()">
+        <input type="button" value="종료" style="width: fit-content;" onclick="stop()">
+    </div>
+    <div id="problem" style="text-align: center; font-size: 50px;" hidden>
+        <span id="num1">1</span>
+        <span id="op1">+</span>
+        <span id="num2">1</span>
     </div>
 </body>
 </html>
