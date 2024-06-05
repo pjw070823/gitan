@@ -67,3 +67,7 @@ window.addEventListener("keydown", (e) => {
         }
     }
 })
+
+function hideInput() {
+    document.getElementById('dummy').style = 'background-color: rgba(0,0,0,0); border-color: rgba(0,0,0,0);'
+}
