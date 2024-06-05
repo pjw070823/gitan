@@ -2,6 +2,7 @@ var answer;
 var buffer = []
 
 function start() {
+    document.getElementById('dummy').focus()
     buffer = []
     var maxDigits = document.getElementById('maxDigits').value
     var add = document.getElementById('add').checked
