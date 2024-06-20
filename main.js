@@ -3,7 +3,8 @@ var buffer = []
 
 function start() {
     buffer = []
-    var maxDigits = document.getElementById('maxDigits').value
+    var maxDigits1 = document.getElementById('maxDigits1').value
+    var maxDigits2 = document.getElementById('maxDigits2').value
     var add = document.getElementById('add').checked
     var sub = document.getElementById('sub').checked
     var mul = document.getElementById('mul').checked
@@ -27,8 +28,8 @@ function start() {
         if (sub) operatorList.push('-')
         if (mul) operatorList.push('×')
         if (div) operatorList.push('÷')
-        var n1 = Math.floor(Math.random() * (Math.pow(10, maxDigits)-2)+1)
-        var n2 = Math.floor(Math.random() * (Math.pow(10, maxDigits)-2)+1)
+        var n1 = Math.floor(Math.random() * (Math.pow(10, maxDigits1)-2)+1)
+        var n2 = Math.floor(Math.random() * (Math.pow(10, maxDigits2)-2)+1)
         var o1 = operatorList[Math.floor(Math.random() * operatorList.length)]
 
         num1.innerText = n1

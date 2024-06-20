@@ -8,9 +8,13 @@
 </head>
 <body>
     <script src="./main.js"></script>
-    <div style="text-align: center; padding: 20px 0 20px 0;">
+    <div style="text-align: center; padding: 20px 0 10px 0;">
         <span style="margin-right: 10px;">최대 자리수</span>
-        <input type="number" id="maxDigits" style="width: min-content; height: min-content;">
+        <input type="number" id="maxDigits1" style="width: min-content; height: min-content;">
+    </div>
+    <div style="text-align: center; padding: 10px 0 10px 0;">
+        <span style="margin-right: 10px;">최대 자리수</span>
+        <input type="number" id="maxDigits2" style="width: min-content; height: min-content;">
     </div>
     <div style="text-align: center; padding: 10px 0 10px 0;">
         <input type="checkbox" id="add">
@@ -19,8 +23,8 @@
         <label for="sub">빼기</label>
         <input type="checkbox" id="mul">
         <label for="mul">곱하기</label>
-        <input type="checkbox" id="div">
-        <label for="div">나누기</label>
+        <input type="checkbox" id="div" hidden>
+        <label for="div" hidden>나누기</label>
     </div>
     <div hidden style="text-align: center; padding: 10px 0 30px 0;">
         <input type="checkbox" id="natural">
